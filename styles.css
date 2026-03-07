@@ -65,7 +65,7 @@ li:hover { background-color: #f0f0f0; }
 /* =========================================
    3. НОВА ЛАБА: ТЕМНА ТЕМА
    ========================================= */
-body.dark-theme { background-color: #1a1a1a; color: #f0f0f0; }
+body.dark-theme { background-color: #0d1117; color: #f0f0f0; }
 body.dark-theme .resume-wrapper { background-color: #2d2d2d; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
 body.dark-theme h2 { border-bottom-color: #f0f0f0; }
 body.dark-theme .contact-info { border-bottom-color: #f0f0f0; }
@@ -124,4 +124,5 @@ footer {
     color: #fff;
     max-width: 900px;
     margin: 0 auto;
+
 }
