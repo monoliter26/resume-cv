@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Максим Кучер</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #000;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        .contact-info span { padding: 0 15px; }
+        .contact-info span:not(:last-child) { border-right: 1px solid #000; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="main-name">Максим Кучер</h1>
+        <p style="color: #e0e0e0; font-size: 1.2em; margin-top: 5px;">
+            Адміністратор з інформаційної безпеки (Початковий рівень)
+        </p>
+        <button id="theme-toggle">Змінити тему 🌙/☀️</button>
+    </header>
+
+    <div class="resume-wrapper">
+        
+        <div class="contact-info">
+            <span>📍 Львів, Україна</span>
+            <span>📧 Maksym.Kucher.KB.2024@lpnu.ua</span>
+            <span>📞 +380931231449</span>
+        </div>
+
+        <section class="objective">
+            <h2>Професійне резюме</h2>
+            <p>Вмотивований та уважний до деталей студент спеціальності "Кібербезпека" з міцними базовими знаннями принципів інформаційної безпеки, дотримання законодавства та міжнародних стандартів (ISO 27001). Наразі здобуваю ступінь бакалавра з кібербезпеки у Національному університеті "Львівська політехніка". Маю практичний досвід, отриманий під час академічних проєктів, включаючи проведення імітаційного аудиту сертифікації ISO 27001.</p>
+            <p>Володію базовими навичками програмування на Python та C++, маю пристрасть до безперервного навчання та вирішення ІТ-завдань. Прагну розпочати віддалену кар'єру в галузі адміністрування інформаційної безпеки.</p>
+        </section>
+
+        <div class="grid-container">
+            
+            <aside class="left-column">
+                <section>
+                    <h2>Освіта</h2>
+                    <p><strong>Національний університет "Львівська політехніка"</strong><br>
+                    Бакалавр з кібербезпеки<br>
+                    <span class="date">2024 – дотепер</span></p>
+                    
+                    <p><strong>Сокальська спеціалізована школа №3</strong><br>
+                    <span class="date">2013 – 2024</span></p>
+                </section>
+
+                <section>
+                    <h2>Мови</h2>
+                    <ul>
+                        <li>Українська: Рідна (C2)</li>
+                        <li>Англійська: Вище середнього (B2)</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Інтереси</h2>
+                    <p>Кібербезпека, стандарти ISO, програмування, шахова стратегія та бокс.</p>
+                </section>
+            </aside>
+
+            <main class="right-column">
+                <section>
+                    <h2>Технічні навички</h2>
+                    <ul>
+                        <li data-status="important"><strong>Стандарти:</strong> ISO/IEC 27001, базова документація ІТ-політик, оцінка ризиків.</li>
+                        <li><strong>Програмування:</strong> Python (базові скрипти), C++ (основи, ООП).</li>
+                        <li><strong>ОС:</strong> Windows, базове знання командного рядка Linux.</li>
+                        <li><strong>Мережі:</strong> Базове розуміння TCP/IP, брандмауерів та протоколів безпеки.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Гнучкі навички</h2>
+                    <ul>
+                        <li>Аналітичний склад розуму та увага до деталей</li>
+                        <li>Прагнення до навчання та адаптивності</li>
+                        <li>Баланс командної та самостійної роботи</li>
+                        <li>Сильні навички письмової та усної комунікації</li>
+                    </ul>
+                </section>
+
+                <section id="comments-section">
+                    <h2>Відгуки попередніх роботодавців</h2>
+                    <div id="comments-container">Завантаження коментарів...</div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <p>© 2026 Максим Кучер | Група КБ-202</p>
+    </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Зворотній зв'язок</h2>
+            <form action="https://formspree.io/f/xeelyrvv" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону">
+                <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

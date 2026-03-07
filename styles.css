@@ -1,0 +1,127 @@
+/* =========================================
+   1. БАЗОВІ НАЛАШТУВАННЯ ТА ШАПКА
+   ========================================= */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #525659;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.resume-wrapper {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px 40px 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main-name {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* =========================================
+   2. СІТКА ТА КОЛОНКИ (ТЕ, ЩО ЗНИКЛО)
+   ========================================= */
+h2 {
+    font-size: 1.2em;
+    border-bottom: 2px dotted #000;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* ОСЬ ВОНА, СІТКА! */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+ul { padding-left: 20px; margin-top: 0; }
+li { margin-bottom: 8px; padding: 4px; transition: background-color 0.2s; }
+li:hover { background-color: #f0f0f0; }
+
+/* =========================================
+   3. НОВА ЛАБА: ТЕМНА ТЕМА
+   ========================================= */
+body.dark-theme { background-color: #1a1a1a; color: #f0f0f0; }
+body.dark-theme .resume-wrapper { background-color: #2d2d2d; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+body.dark-theme h2 { border-bottom-color: #f0f0f0; }
+body.dark-theme .contact-info { border-bottom-color: #f0f0f0; }
+body.dark-theme li:hover { background-color: #3d3d3d; }
+body.dark-theme .date { color: #aaa; }
+
+#theme-toggle {
+    margin-top: 15px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+#theme-toggle:hover { background: #fff; color: #000; }
+
+/* =========================================
+   4. НОВА ЛАБА: КОМЕНТАРІ ТА ФОРМА
+   ========================================= */
+.comment-card {
+    border-left: 3px solid #000;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+body.dark-theme .comment-card { background: #3d3d3d; border-left-color: #f0f0f0; }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+body.dark-theme .modal-content { background-color: #333; color: #fff; }
+.close-button { position: absolute; right: 20px; top: 10px; font-size: 28px; cursor: pointer; }
+
+form input, form textarea { width: 100%; margin-bottom: 15px; padding: 10px; box-sizing: border-box; }
+.submit-btn { background-color: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer; width: 100%; }
+body.dark-theme .submit-btn { background-color: #555; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+}
