@@ -107,10 +107,10 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h2>Зворотній зв'язок</h2>
-            <form action="https://formspree.io/f/xeelyrvv" method="POST">
+            <form action="/api/contact" method="POST">
                 <input type="text" name="name" placeholder="Ваше ім'я" required>
                 <input type="email" name="email" placeholder="Ваш Email" required>
-                <input type="tel" name="phone" placeholder="Номер телефону">
+                <input type="text" name="subject" placeholder="Тема повідомлення" required>
                 <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
                 <button type="submit" class="submit-btn">Відправити</button>
             </form>
