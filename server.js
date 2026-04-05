@@ -5,7 +5,7 @@ const Joi = require('joi');
 const path = require('path');
 
 // Твій ключ API від Resend
-const resend = new Resend('re_PidxcbpX_89YmBGk6FdeepxNVL2YXGLuo'); 
+const resend = new Resend('re_bJw5oL5v_2vUfxNeqr5uUtMGhc49BDouA'); 
 
 const init = async () => {
     const server = Hapi.server({
